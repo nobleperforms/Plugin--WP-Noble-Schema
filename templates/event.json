@@ -1,0 +1,68 @@
+{
+    "slug": "event",
+    "label": "Event",
+    "schema_type": "Event",
+    "schema_url": "https://schema.org/Event",
+    "description": "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the [[offers]] property. Repeated events may be structured as separate Event objects.",
+    "node": {
+        "@type": "Event"
+    },
+    "fields": [
+        {
+            "path": "endDate",
+            "label": "endDate",
+            "required": false,
+            "value_type": "datetime",
+            "help": "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601))."
+        },
+        {
+            "path": "inLanguage",
+            "label": "inLanguage",
+            "required": false,
+            "value_type": "text",
+            "help": "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]]."
+        },
+        {
+            "path": "keywords",
+            "label": "keywords",
+            "required": false,
+            "value_type": "text",
+            "help": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property."
+        },
+        {
+            "path": "startDate",
+            "label": "startDate",
+            "required": false,
+            "value_type": "datetime",
+            "help": "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601))."
+        },
+        {
+            "path": "description",
+            "label": "description",
+            "required": false,
+            "value_type": "text",
+            "help": "A description of the item."
+        },
+        {
+            "path": "image",
+            "label": "image",
+            "required": false,
+            "value_type": "image",
+            "help": "An image of the item. This can be a [[URL]] or a fully described [[ImageObject]]."
+        },
+        {
+            "path": "name",
+            "label": "name",
+            "required": true,
+            "value_type": "text",
+            "help": "The name of the item."
+        },
+        {
+            "path": "url",
+            "label": "url",
+            "required": false,
+            "value_type": "text",
+            "help": "URL of the item."
+        }
+    ]
+}

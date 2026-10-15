@@ -1,0 +1,13 @@
+{
+  "name": "wp-noble-schema",
+  "version": "0.1.7",
+  "private": true,
+  "scripts": {
+    "watch": "parcel watch src/styles/admin.scss src/scripts/admin.js src/scripts/schema-block.js --dist-dir dist",
+    "build": "parcel build src/styles/admin.scss src/scripts/admin.js src/scripts/schema-block.js --dist-dir dist"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.14.2",
+    "parcel": "^2.14.2"
+  }
+}

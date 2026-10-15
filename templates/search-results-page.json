@@ -1,0 +1,40 @@
+{
+    "slug": "search-results-page",
+    "label": "SearchResultsPage",
+    "schema_type": "SearchResultsPage",
+    "schema_url": "https://schema.org/SearchResultsPage",
+    "description": "Web page type: Search results page.",
+    "node": {
+        "@type": "SearchResultsPage"
+    },
+    "fields": [
+        {
+            "path": "description",
+            "label": "description",
+            "required": false,
+            "value_type": "text",
+            "help": "A description of the item."
+        },
+        {
+            "path": "image",
+            "label": "image",
+            "required": false,
+            "value_type": "image",
+            "help": "An image of the item. This can be a [[URL]] or a fully described [[ImageObject]]."
+        },
+        {
+            "path": "name",
+            "label": "name",
+            "required": true,
+            "value_type": "text",
+            "help": "The name of the item."
+        },
+        {
+            "path": "url",
+            "label": "url",
+            "required": false,
+            "value_type": "text",
+            "help": "URL of the item."
+        }
+    ]
+}
