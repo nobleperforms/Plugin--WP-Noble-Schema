@@ -1,0 +1,75 @@
+{
+    "slug": "web-page",
+    "label": "WebPage",
+    "schema_type": "WebPage",
+    "schema_url": "https://schema.org/WebPage",
+    "description": "A web page. Every web page is implicitly assumed to be declared to be of type WebPage, so the various properties about that webpage, such as <code>breadcrumb</code> may be used. We recommend explicit declaration if these properties are specified, but if they are found outside of an itemscope, they will be assumed to be about the page.",
+    "node": {
+        "@type": "WebPage"
+    },
+    "fields": [
+        {
+            "path": "dateModified",
+            "label": "dateModified",
+            "required": false,
+            "value_type": "datetime",
+            "help": "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed."
+        },
+        {
+            "path": "datePublished",
+            "label": "datePublished",
+            "required": false,
+            "value_type": "datetime",
+            "help": "Date of first publication or broadcast. For example the date a [[CreativeWork]] was broadcast or a [[Certification]] was issued."
+        },
+        {
+            "path": "description",
+            "label": "description",
+            "required": false,
+            "value_type": "text",
+            "help": "A description of the item."
+        },
+        {
+            "path": "image",
+            "label": "image",
+            "required": false,
+            "value_type": "image",
+            "help": "An image of the item. This can be a [[URL]] or a fully described [[ImageObject]]."
+        },
+        {
+            "path": "inLanguage",
+            "label": "inLanguage",
+            "required": false,
+            "value_type": "text",
+            "help": "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]]."
+        },
+        {
+            "path": "keywords",
+            "label": "keywords",
+            "required": false,
+            "value_type": "text",
+            "help": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property."
+        },
+        {
+            "path": "name",
+            "label": "name",
+            "required": true,
+            "value_type": "text",
+            "help": "The name of the item."
+        },
+        {
+            "path": "thumbnailUrl",
+            "label": "thumbnailUrl",
+            "required": false,
+            "value_type": "text",
+            "help": "A thumbnail image relevant to the Thing."
+        },
+        {
+            "path": "url",
+            "label": "url",
+            "required": false,
+            "value_type": "text",
+            "help": "URL of the item."
+        }
+    ]
+}

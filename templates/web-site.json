@@ -1,0 +1,47 @@
+{
+    "slug": "web-site",
+    "label": "WebSite",
+    "schema_type": "WebSite",
+    "schema_url": "https://schema.org/WebSite",
+    "description": "A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs.",
+    "node": {
+        "@type": "WebSite"
+    },
+    "fields": [
+        {
+            "path": "about",
+            "label": "about",
+            "required": false,
+            "value_type": "text",
+            "help": "The subject matter of an object."
+        },
+        {
+            "path": "description",
+            "label": "description",
+            "required": false,
+            "value_type": "text",
+            "help": "A description of the item."
+        },
+        {
+            "path": "image",
+            "label": "image",
+            "required": false,
+            "value_type": "image",
+            "help": "An image of the item. This can be a [[URL]] or a fully described [[ImageObject]]."
+        },
+        {
+            "path": "name",
+            "label": "name",
+            "required": true,
+            "value_type": "text",
+            "help": "The name of the item."
+        },
+        {
+            "path": "url",
+            "label": "url",
+            "required": false,
+            "value_type": "text",
+            "help": "URL of the item."
+        }
+    ]
+}

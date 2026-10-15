@@ -1,0 +1,75 @@
+{
+    "slug": "place",
+    "label": "Place",
+    "schema_type": "Place",
+    "schema_url": "https://schema.org/Place",
+    "description": "Entities that have a somewhat fixed, physical extension.",
+    "node": {
+        "@type": "Place"
+    },
+    "fields": [
+        {
+            "path": "address",
+            "label": "address",
+            "required": false,
+            "value_type": "postal_address",
+            "help": "Physical address of the item."
+        },
+        {
+            "path": "keywords",
+            "label": "keywords",
+            "required": false,
+            "value_type": "text",
+            "help": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property."
+        },
+        {
+            "path": "latitude",
+            "label": "latitude",
+            "required": false,
+            "value_type": "text",
+            "help": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System))."
+        },
+        {
+            "path": "longitude",
+            "label": "longitude",
+            "required": false,
+            "value_type": "text",
+            "help": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System))."
+        },
+        {
+            "path": "telephone",
+            "label": "telephone",
+            "required": false,
+            "value_type": "text",
+            "help": "The telephone number."
+        },
+        {
+            "path": "description",
+            "label": "description",
+            "required": false,
+            "value_type": "text",
+            "help": "A description of the item."
+        },
+        {
+            "path": "image",
+            "label": "image",
+            "required": false,
+            "value_type": "image",
+            "help": "An image of the item. This can be a [[URL]] or a fully described [[ImageObject]]."
+        },
+        {
+            "path": "name",
+            "label": "name",
+            "required": true,
+            "value_type": "text",
+            "help": "The name of the item."
+        },
+        {
+            "path": "url",
+            "label": "url",
+            "required": false,
+            "value_type": "text",
+            "help": "URL of the item."
+        }
+    ]
+}
